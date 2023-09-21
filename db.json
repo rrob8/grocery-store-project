@@ -1,0 +1,59 @@
+{
+    "groceries": [
+      {
+        "id": 1,
+        "product": "whole milk",
+        "category": "dairy",
+        "stock": 5        
+      },
+      {
+        "id": 2,
+        "product": "2% milk",
+        "category": "dairy",
+        "stock": 3      
+      },
+      {
+        "id": 3,
+        "product": "1% milk",
+        "category": "dairy",
+        "stock": 10        
+      },
+      {
+        "id": 4,
+        "product": "fat free Milk",
+        "category": "dairy",
+        "stock": 0       
+      },
+      {
+        "id": 5,
+        "product": "cheese",
+        "category": "dairy",
+        "stock": 4       
+      },
+      {
+        "id": 6,
+        "product": "yogurt",
+        "category": "dairy",
+        "stock": 8        
+      },
+      {
+        "id": 7,
+        "product": "beef",
+        "category": "meats",
+        "stock": 8        
+      },
+      {
+        "id": 8,
+        "product": "cookies",
+        "category": "snacks",
+        "stock": 20        
+      },
+      {
+        "id": 9,
+        "product": "chicken",
+        "category": "meats",
+        "stock": 40        
+      }
+      
+    ]
+    }
