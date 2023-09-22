@@ -1,0 +1,38 @@
+.button {
+        background-color: #4CAF50; /* Green */
+        border:2px solid black;
+        color: white;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+      }
+
+#heading {
+  font-size: 20px;
+}
+
+#title {
+  text-align: center;
+}
+
+.clear {
+  background-color: black;
+        border:2px solid white;
+        color: white;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+}
+
+.image {
+  border-radius: 8px;
+  max-width: 40%;  
+height: auto;
+margin-left: auto;
+margin-right:auto;
+display:block;
+}

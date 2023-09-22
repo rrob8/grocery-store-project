@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link  rel="stylesheet" href="index.css" >
+    <script src='index.js' defer></script>
 </head>
 <body>
-    <link rel="stylesheet" href="index.css">
-    <script src='index.js' ></script>
+    <h3>Request an Item</h3>
+    <form id="request-item">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        value=""
+        placeholder="Enter a product name..."
+        class="input-text"
+      />
+    </br>
+    <input
+        type="text"
+        name="image"
+        id="image"
+        value=""
+        placeholder="Enter a picture link..."
+        class="input-text"
+      />
+    
+      <input
+        type="submit"
+        name="submit"
+        value="Request Item"
+        class="submit"
+      />
+    </form>
+
+    <h3 id ='cart-title'>Shopping Cart</h3>
 </body>
 </html>

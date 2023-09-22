@@ -1,59 +1,82 @@
 {
-    "groceries": [
-      {
-        "id": 1,
-        "product": "whole milk",
-        "category": "dairy",
-        "stock": 5        
-      },
-      {
-        "id": 2,
-        "product": "2% milk",
-        "category": "dairy",
-        "stock": 3      
-      },
-      {
-        "id": 3,
-        "product": "1% milk",
-        "category": "dairy",
-        "stock": 10        
-      },
-      {
-        "id": 4,
-        "product": "fat free Milk",
-        "category": "dairy",
-        "stock": 0       
-      },
-      {
-        "id": 5,
-        "product": "cheese",
-        "category": "dairy",
-        "stock": 4       
-      },
-      {
-        "id": 6,
-        "product": "yogurt",
-        "category": "dairy",
-        "stock": 8        
-      },
-      {
-        "id": 7,
-        "product": "beef",
-        "category": "meats",
-        "stock": 8        
-      },
-      {
-        "id": 8,
-        "product": "cookies",
-        "category": "snacks",
-        "stock": 20        
-      },
-      {
-        "id": 9,
-        "product": "chicken",
-        "category": "meats",
-        "stock": 40        
-      }
-      
-    ]
+  "groceries": [
+    {
+      "id": 1,
+      "product": "whole milk",
+      "category": "dairy",
+      "stock": 5,
+      "price": 3,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_419f1169-a698-45a1-8d89-ad28136ba841?wid=1200&hei=1200&qlt=80&fmt=webp"
+    },
+    {
+      "id": 2,
+      "product": "2% milk",
+      "category": "dairy",
+      "stock": 3,
+      "price": 3,
+      "image": "https://www.kroger.com/product/images/large/front/0001111041700"
+    },
+    {
+      "id": 3,
+      "product": "1% milk",
+      "category": "dairy",
+      "stock": 10,
+      "price": 3,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_477a3685-84dd-4419-b83d-8bc975e00479?wid=1200&hei=1200&qlt=80&fmt=webp"
+    },
+    {
+      "id": 4,
+      "product": "fat free Milk",
+      "category": "dairy",
+      "stock": 0,
+      "price": 3,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_71a94c4c-e91f-4279-a051-727da4afdaa6?wid=1200&hei=1200&qlt=80&fmt=webp"
+    },
+    {
+      "id": 5,
+      "product": "swiss cheese",
+      "category": "dairy",
+      "stock": 4,
+      "price": 2,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_3c2cf60d-c193-4949-b7ec-19f05a9d5534?wid=1200&hei=1200&qlt=80&fmt=webp"
+    },
+    {
+      "id": 6,
+      "product": "yogurt",
+      "category": "dairy",
+      "stock": 8,
+      "price": 4,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_20bcd1d4-6b19-4974-b33c-a31623f57358?wid=1200&hei=1200&qlt=80&fmt=webp"
+    },
+    {
+      "id": 7,
+      "product": "beef",
+      "category": "meats",
+      "stock": 8,
+      "price": 8,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_5c08b4e9-aabc-4b79-a579-0e33b9f849c7?wid=1200&hei=1200&qlt=80&fmt=webp"
+    },
+    {
+      "id": 8,
+      "product": "cookies",
+      "category": "snacks",
+      "stock": 20,
+      "price": 3,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_3749e9f1-d126-4a81-8edf-8534b6fb51af?wid=1200&hei=1200&qlt=80&fmt=webp"
+    },
+    {
+      "id": 9,
+      "product": "chicken",
+      "category": "meats",
+      "stock": 40,
+      "price": 5,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_48e821b7-df25-45f1-8e7d-157902ad2ea4?wid=1200&hei=1200&qlt=80&fmt=webp"
+    },
+    {
+      "product": "pop tarts",
+      "price": 10,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_43da0eb5-d310-4fc7-988f-1214ff5212a9?wid=1200&hei=1200&qlt=80&fmt=webp",
+      "id": 10
     }
+  ]
+}
