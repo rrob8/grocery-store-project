@@ -1,4 +1,15 @@
-addEventListener('DOMContentLoaded', () => console.log('this is working'))
+document.addEventListener("DOMContentLoaded", ()=> {
+    fetch('http://localhost:3000/groceries/')
+    .then(response=> response.json())
+    .then(data=>{
+        foods = data
+        displayGroceries(data)
+    
+    })
+})
+// define foods to store the data
+let foods 
+
 
 const body = document.querySelector('body')
 
@@ -39,35 +50,20 @@ currentProduct.className = 'image'
 currentProduct.src = "https://cdn.apartmenttherapy.info/image/upload/v1561242428/stock/shutterstock_373602469.jpg"
 body.append(currentProduct)
 
-
-// first fetch request of the page
-
-fetch('http://localhost:3000/groceries/')
-.then(response=> response.json())
-.then(data=> displayGroceries(data))
-
-
-function clearBasket () {
-    numericTotal = 0
-    total.textContent = `Your total is $${numericTotal}`
-
-    shoppingCart.textContent = ''
-}
-
 function displayGroceries(data) {
     data.forEach(foodItem => {
         
         const foodBtn = document.createElement('button')
         foodList.append(foodBtn)
-       foodBtn.id = foodItem.product
-       foodBtn.textContent = `${foodItem.product}, $${foodItem.price}  `
-       foodBtn.className = 'button'
-       foodBtn.dataset.img = foodItem.image
+        foodBtn.id = foodItem.id
+        foodBtn.textContent = `${foodItem.product}, $${foodItem.price}  `
+        foodBtn.className = 'button'
+        foodBtn.dataset.img = foodItem.image
 
-       foodBtn.addEventListener('mouseover', (event)=> displayItem(event))
+        foodBtn.addEventListener('mouseover',  displayItem)  // event listener 1
 
-        foodBtn.addEventListener('click', (event) => addItem(event))
-})
+        foodBtn.addEventListener('click', addItem)     // event listener 2
+    })
 }
 
 function displayItem (event) {
@@ -79,10 +75,12 @@ function displayItem (event) {
 
 function addItem(event) {
     const foodName = event.target.textContent
-    
-    const price = foodName.match(/\d+/)[0]
-    console.log( price)
-    numericTotal = numericTotal + parseInt(price, 10)
+    const foodId = event.target.id
+    console.log(foods )
+     
+    currentFood = foods.find(food => food.id == foodId)
+    console.log(currentFood)
+   numericTotal = numericTotal + parseInt(currentFood.price)
     total.textContent = `Your total is $${numericTotal}`
 
     const cartItem = document.createElement('li')
@@ -92,13 +90,16 @@ function addItem(event) {
     
 }
 
-const requestForm = document.getElementById('request-item')
-console.log(requestForm)
-requestForm.addEventListener('submit',(event) =>{
-    
-     requestItem(event)
+function clearBasket () {
+    numericTotal = 0
+    total.textContent = `Your total is $${numericTotal}`
 
-})
+    shoppingCart.textContent = ''
+}
+
+const requestForm = document.getElementById('request-item')
+requestForm.addEventListener('submit',(event) => requestItem(event))          // event listener 3
+    
 
 function requestItem (event) {
     event.preventDefault()
