@@ -25,4 +25,4 @@ The new item name will appear in grocery store list along with a randomly assign
 ## Resources
 
 photos - target.com
-
+photo of grocery store - https://www.thekitchn.com/dark-grocery-stores-22982291
