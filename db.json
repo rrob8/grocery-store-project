@@ -77,6 +77,18 @@
       "price": 10,
       "image": "https://target.scene7.com/is/image/Target/GUEST_43da0eb5-d310-4fc7-988f-1214ff5212a9?wid=1200&hei=1200&qlt=80&fmt=webp",
       "id": 10
+    },
+    {
+      "product": "cat food",
+      "price": 2,
+      "image": "https://image.chewy.com/is/image/catalog/76354_MAIN._AC_SL1200_V1640901389_.jpg",
+      "id": 11
+    },
+    {
+      "product": "dry dog food",
+      "price": 4,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_0dc8da3a-23bb-411b-bba2-536fd347e32f?wid=800&hei=800&qlt=80&fmt=webp",
+      "id": 12
     }
   ]
 }

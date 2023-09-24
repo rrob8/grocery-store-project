@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", ()=> {
+    fetchGroceries()
+})
+
+function fetchGroceries () {
     fetch('http://localhost:3000/groceries/')
     .then(response=> response.json())
     .then(data=>{
@@ -6,7 +10,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         displayGroceries(data)
     
     })
-})
+}
 // define foods to store the data
 let foods 
 
@@ -120,7 +124,7 @@ function requestItem (event) {
     }
     
     console.log(foodObj)
-
+   
     fetch('http://localhost:3000/groceries', {
         method:'POST',
         headers:{
@@ -128,8 +132,11 @@ function requestItem (event) {
         },
         body: JSON.stringify(foodObj)
     })
-    .then(response => response.json())
-    .then(food => displayGroceries([food])) 
+    .then(response => response.json(),
+    foodList.textContent ='')
+    .then((data) => fetchGroceries()
+    )
+        
 
     requestForm.name.value = ''
     requestForm.image.value = ''
