@@ -140,5 +140,5 @@ function requestItem (event) {
 
     requestForm.name.value = ''
     requestForm.image.value = ''
-} // end of if statement 
+} 
 }
