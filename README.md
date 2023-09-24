@@ -19,6 +19,7 @@ item appears
 The new item name will appear in grocery store list along with a randomly assigned price and the picture you provided.
 (Notice) There is no protection provided against malicious code entered into these fields.
 
+REMINDER: execute this code in your terminal to begin: "json-server --watch db.json --port 3000"
 
 
 
