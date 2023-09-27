@@ -54,8 +54,10 @@ currentProduct.className = 'image'
 currentProduct.src = "https://cdn.apartmenttherapy.info/image/upload/v1561242428/stock/shutterstock_373602469.jpg"
 body.append(currentProduct)
 
+
+
 function displayGroceries(data) {
-    data.forEach(foodItem => {
+    data.map(foodItem => {
         
         const foodBtn = document.createElement('button')
         foodList.append(foodBtn)
@@ -80,10 +82,10 @@ function displayItem (event) {
 function addItem(event) {
     const foodName = event.target.textContent
     const foodId = event.target.id
-    console.log(foods )
+    
      
     currentFood = foods.find(food => food.id == foodId)
-    console.log(currentFood)
+    
    numericTotal = numericTotal + parseInt(currentFood.price)
     total.textContent = `Your total is $${numericTotal}`
 
@@ -134,8 +136,7 @@ function requestItem (event) {
     })
     .then(response => response.json(),
     foodList.textContent ='')
-    .then((data) => fetchGroceries()
-    )
+    .then(() => fetchGroceries())
         
 
     requestForm.name.value = ''
@@ -143,5 +144,3 @@ function requestItem (event) {
 } 
 }
 
-
-// test comment
